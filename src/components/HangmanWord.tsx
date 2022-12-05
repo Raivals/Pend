@@ -15,7 +15,7 @@ function HangmanWord({
     <div
       style={{
         display: "flex",
-        gap: "0.25em",
+        gap: ".25em",
         fontSize: "6rem",
         fontWeight: "bold",
         textTransform: "uppercase",

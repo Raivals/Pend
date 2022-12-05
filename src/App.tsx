@@ -88,15 +88,16 @@ function App() {
         guessedLetters={guessedLetters}
         wordToGuess={wordToGuess}
       />
-      <div style={{ alignSelf: "stretch" }}></div>
-      <Keyboard
-        disabled={isWinner || isLoser}
-        activeLetters={guessedLetters.filter((letter) =>
-          wordToGuess.includes(letter),
-        )}
-        inactiveLetters={inCorrectLetters}
-        addGuessedLetter={addGuessedLetter}
-      />
+      <div style={{ alignSelf: "stretch" }}>
+        <Keyboard
+          disabled={isWinner || isLoser}
+          activeLetters={guessedLetters.filter((letter) =>
+            wordToGuess.includes(letter),
+          )}
+          inactiveLetters={inCorrectLetters}
+          addGuessedLetter={addGuessedLetter}
+        />
+      </div>
     </div>
   )
 }
